@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_radius">100sp</dimen>
+    <dimen name="button_contour">2sp</dimen>
+    <dimen name="button_margin">10sp</dimen>
+
+    <dimen name="screen_total_height">300dp</dimen>
+    <dimen name="screen_top_height">70dp</dimen>
+    <dimen name="screen_main_margin">40dp</dimen>
+    <dimen name="screen_bot_height">130dp</dimen>
+    <dimen name="screen_bot_margin">110dp</dimen>
+    <dimen name="sreen_full_height">200dp</dimen>
+</resources>
