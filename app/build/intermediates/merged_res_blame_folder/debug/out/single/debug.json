@@ -1,5 +1,49 @@
 [
     {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_keyboard_layout.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-land\\keyboard_layout.xml"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headcrab.jpg.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\headcrab.jpg"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calc_button.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\calc_button.xml"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -20,48 +64,24 @@
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_keyboard_layout.xml.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-land\\keyboard_layout.xml"
     },
     {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout_keyboard_layout.xml.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout\\keyboard_layout.xml"
     },
     {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_headcrab.jpg.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\headcrab.jpg"
-    },
-    {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_main.xml.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-land\\activity_main.xml"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-night_activity_main.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-night\\activity_main.xml"
     },
     {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_screen_layout.xml.flat",
@@ -72,23 +92,7 @@
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calc_button.xml.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\calc_button.xml"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calc_screen.xml.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\calc_screen.xml"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     }
 ]

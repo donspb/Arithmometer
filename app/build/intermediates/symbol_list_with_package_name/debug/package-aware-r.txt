@@ -1133,6 +1133,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color prime_color
 color purple_200
 color purple_500
 color purple_700
@@ -1243,6 +1244,7 @@ dimen appcompat_dialog_background_inset
 dimen button_contour
 dimen button_margin
 dimen button_radius
+dimen button_textsize
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1912,7 +1914,6 @@ id group_divider
 id grouping
 id groups
 id guideline
-id headImage
 id header_title
 id hideable
 id home
@@ -3129,6 +3130,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style button_m_style
 style button_theme
 style screen_theme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
