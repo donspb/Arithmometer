@@ -3,6 +3,7 @@ package ru.gb.androidone.donspb.arithmometer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             buttonDec, buttonAdd;
     private Button buttonEqauls;
     private Button buttonDot;
+    private Button buttonSettings;
     private StringBuilder enteredNumber;
 
     private String firstNumber;
@@ -92,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
         buttonAdd = findViewById(R.id.button_add);
         buttonEqauls = findViewById(R.id.button_equal);
         buttonDot = findViewById(R.id.button_dot);
+
+        buttonSettings = findViewById(R.id.main_set_button);
+        buttonSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent windowSettings = new Intent(this, SettingsActivity.class);
+            }
+        });
 
         buttonZero.setOnClickListener(numbersOnClickListener);
         buttonOne.setOnClickListener(numbersOnClickListener);

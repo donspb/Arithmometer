@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/screen_total_height">
+    android:layout_height="@dimen/screen_total_height"
+    >
 
 <!--    <androidx.appcompat.widget.AppCompatImageView-->
 <!--        android:id="@+id/headImage"-->
@@ -13,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/sreen_full_height"
         style="@style/screen_theme"
-        android:layout_margin="@dimen/screen_main_margin" />
+        android:layout_margin="@dimen/screen_main_margin"
+        android:orientation="vertical" />
 
 
     <TextView
@@ -35,5 +37,15 @@
         android:textColor="@color/screen_text"
         android:textAlignment="viewEnd"
         android:textSize="@dimen/text_bot_size_medium"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/set_title"
+        android:textSize="@dimen/main_settings_button_text"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:id="@+id/main_set_button" />
 
 </FrameLayout>

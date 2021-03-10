@@ -76,10 +76,6 @@
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout-night_activity_main.xml.flat",
-        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout-night\\activity_main.xml"
-    },
-    {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
@@ -94,5 +90,9 @@
     {
         "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\drawable_calc_screen.xml.flat",
         "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\drawable\\calc_screen.xml"
+    },
+    {
+        "merged": "D:\\_Git\\Arithmometer\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "D:\\_Git\\Arithmometer\\app\\src\\main\\res\\layout\\activity_settings.xml"
     }
 ]

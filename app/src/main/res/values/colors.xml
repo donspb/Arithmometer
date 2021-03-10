@@ -23,5 +23,6 @@
 
     <!-- -->
     <color name="prime_color">#00BCD4</color>
+    <color name="red">#6C2329</color>
 
 </resources>

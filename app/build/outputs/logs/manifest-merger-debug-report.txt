@@ -78,10 +78,14 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Do
 		ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:11:9-50
-activity#ru.gb.androidone.donspb.arithmometer.MainActivity
-ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:12:9-19:20
+activity#ru.gb.androidone.donspb.arithmometer.Settings
+ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:12:9-55
 	android:name
-		ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:12:19-47
+		ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:12:19-43
+activity#ru.gb.androidone.donspb.arithmometer.MainActivity
+ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:13:9-19:20
+	android:name
+		ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\_Git\Arithmometer\app\src\main\AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:columnCount="3"
+            tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/settings_title_height"
+                    android:textSize="@dimen/settings_title_txt_size"
+                    android:text="@string/set_title"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/settings_title_margin"
+                    android:layout_columnSpan="3"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/settings_field_height"
+                    android:textSize="@dimen/settings_field_txt_size"
+                    android:text="@string/set_setting_name"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/settings_field_margin"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="2"/>
+
+                <ToggleButton
+                    android:layout_width="@dimen/button_dark_toggle"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"            />
+
+        </GridLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            android:foregroundGravity="bottom">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="@dimen/back_button_width"
+                    android:layout_height="@dimen/back_button_height"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_gravity="bottom |right"
+                    android:text="@string/back_button_name" />
+
+        </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Settings">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/settings_title_height"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        android:textSize="@dimen/settings_title_txt_size"-->
+<!--        android:text="@string/set_title"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_marginStart="@dimen/settings_title_margin"-->
+<!--        android:id="@+id/settings_title"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/settings_field_height"-->
+<!--        android:textSize="@dimen/settings_field_txt_size"-->
+<!--        android:text="@string/set_setting_name"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_marginStart="@dimen/settings_field_margin"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/settings_title"-->
+<!--        tools:ignore="MissingConstraints" -->
+<!--        android:id="@+id/set_dark_title"/>-->
+<!--    -->
+<!--    <ToggleButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        app:layout_constraintStart_toEndOf="@id/set_dark_title"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/settings_title"-->
+<!--        android:gravity="right"/>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

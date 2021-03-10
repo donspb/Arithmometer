@@ -1138,6 +1138,7 @@ color purple_200
 color purple_500
 color purple_700
 color radiobutton_themeable_attribute_color
+color red
 color ripple_material_dark
 color ripple_material_light
 color screen_border
@@ -1242,6 +1243,7 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
 dimen button_contour
+dimen button_dark_toggle
 dimen button_margin
 dimen button_radius
 dimen button_textsize
@@ -1319,6 +1321,9 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen main_settings_button_height
+dimen main_settings_button_text
+dimen main_settings_button_width
 dimen material_clock_display_padding
 dimen material_clock_face_margin_top
 dimen material_clock_hand_center_dot_radius
@@ -1556,6 +1561,12 @@ dimen screen_top_height
 dimen screen_top_width
 dimen screen_total_height
 dimen screen_total_width
+dimen settings_field_height
+dimen settings_field_margin
+dimen settings_field_txt_size
+dimen settings_title_height
+dimen settings_title_margin
+dimen settings_title_txt_size
 dimen sreen_full_height
 dimen sreen_full_width
 dimen test_mtrl_calendar_day_cornerSize
@@ -1943,6 +1954,7 @@ id line3
 id linear
 id listMode
 id list_item
+id main_set_button
 id masked
 id material_clock_display
 id material_clock_face
@@ -2209,6 +2221,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2408,6 +2421,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string set_setting_name
+string set_title
 string seven
 string six
 string status_bar_notification_info_overflow
