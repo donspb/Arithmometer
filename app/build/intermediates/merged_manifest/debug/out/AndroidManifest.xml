@@ -17,8 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Arithmometer" >
-        <activity android:name="ru.gb.androidone.donspb.arithmometer.Settings" />
+        android:theme="@style/Theme_Arithmometer" >
+        <activity android:name="ru.gb.androidone.donspb.arithmometer.SettingsActivity" />
         <activity android:name="ru.gb.androidone.donspb.arithmometer.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

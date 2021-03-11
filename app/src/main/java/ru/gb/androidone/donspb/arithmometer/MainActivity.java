@@ -1,6 +1,7 @@
 package ru.gb.androidone.donspb.arithmometer;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_TOP_SCREEN = "TOP_SCREEN";
     private static final String KEY_BOT_SCREEN = "BOT_SCREEN";
     private static final String KEY_CURRENT_NUMBER = "CURRENT";
+
+    private static final int REQUEST_CODE = 99;
+
+    private static final String settings = "settings.xml";
+    private static final String darkSet = "Dark";
 
     private TextView topTextView;
     private TextView botTextView;
@@ -45,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        themeSetter();
         setContentView(R.layout.activity_main);
         controlsInit();
         initialSetup();
@@ -73,6 +80,20 @@ public class MainActivity extends AppCompatActivity {
         enteredNumber = new StringBuilder(savedInstanceState.getString(KEY_CURRENT_NUMBER));
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode != REQUEST_CODE) {
+            super.onActivityResult(requestCode, resultCode, data);
+            return;
+        }
+        if (resultCode == RESULT_OK) {
+            if (data.getBooleanExtra(darkSet, false)) {
+                themeSetter();
+                recreate();
+            }
+        }
+    }
+
     private void controlsInit() {
         topTextView = findViewById(R.id.topScreen);
         botTextView = findViewById(R.id.botScreen);
@@ -96,12 +117,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDot = findViewById(R.id.button_dot);
 
         buttonSettings = findViewById(R.id.main_set_button);
-        buttonSettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent windowSettings = new Intent(this, SettingsActivity.class);
-            }
-        });
+        buttonSettings.setOnClickListener(activityChangeListener);
 
         buttonZero.setOnClickListener(numbersOnClickListener);
         buttonOne.setOnClickListener(numbersOnClickListener);
@@ -133,6 +149,20 @@ public class MainActivity extends AppCompatActivity {
         resOnScreen = false;
         actionSignEnter = false;
     }
+
+    private void themeSetter() {
+        boolean isDark = getSharedPreferences(settings,MODE_PRIVATE).getBoolean(darkSet, false);
+        if (isDark) {
+            setTheme(R.style.Theme_ArithmometerDark);
+        } else {
+            setTheme(R.style.Theme_Arithmometer);
+        }
+    }
+
+    private View.OnClickListener activityChangeListener = (View v) -> {
+            Intent windowSettings = new Intent(MainActivity.this, SettingsActivity.class);
+            MainActivity.this.startActivityForResult(windowSettings, REQUEST_CODE);
+    };
 
     private View.OnClickListener numbersOnClickListener = new View.OnClickListener() {
         @Override

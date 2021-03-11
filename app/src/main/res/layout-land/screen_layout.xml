@@ -36,4 +36,14 @@
         android:textAlignment="viewEnd"
         android:textSize="@dimen/text_bot_size_medium"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/set_title"
+        android:textSize="@dimen/main_settings_button_text"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:id="@+id/main_set_button" />
+
 </FrameLayout>

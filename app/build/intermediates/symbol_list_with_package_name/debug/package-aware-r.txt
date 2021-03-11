@@ -1242,6 +1242,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen back_button_height
+dimen back_button_width
 dimen button_contour
 dimen button_dark_toggle
 dimen button_margin
@@ -1831,6 +1833,7 @@ id button_9
 id button_add
 id button_back
 id button_ce
+id button_dark_tgl
 id button_div
 id button_dot
 id button_equal
@@ -2052,6 +2055,7 @@ id save_overlay_view
 id sawtooth
 id scale
 id screen
+id screenzone
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -2340,6 +2344,7 @@ string add
 string app_name
 string appbar_scrolling_view_behavior
 string back
+string back_button_name
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string c_ce
@@ -2838,7 +2843,6 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
-style Theme_Arithmometer
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -2944,6 +2948,8 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style Theme_Arithmometer
+style Theme_ArithmometerDark
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
