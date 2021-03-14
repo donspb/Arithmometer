@@ -3,6 +3,7 @@ package ru.gb.androidone.donspb.arithmometer;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,6 @@ import java.math.RoundingMode;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int MAX_NUMBER_LEN = 9;
     private static final String KEY_FIRST_NUMBER = "FIRST_NUMBER";
     private static final String KEY_OPERATION = "OPERATION";
     private static final String KEY_OP_ENTER = "OPER_ENTER";
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_BOT_SCREEN = "BOT_SCREEN";
     private static final String KEY_CURRENT_NUMBER = "CURRENT";
 
-    private static final int REQUEST_CODE = 99;
+//    private static final int REQUEST_CODE = 99;
 
     private static final String settings = "settings.xml";
     private static final String darkSet = "Dark";
@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean actionSignEnter = false;
     private boolean resOnScreen = false;
 
+    Calcore calcore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putString(KEY_FIRST_NUMBER, firstNumber);
-        outState.putString(KEY_OPERATION, mathAction);
+        outState.putString(KEY_FIRST_NUMBER, calcore.getPreviousNumber());
+        outState.putString(KEY_OPERATION, calcore.getOperation());
         outState.putBoolean(KEY_OP_ENTER, actionSignEnter);
         outState.putBoolean(KEY_RES_SHOWING, resOnScreen);
         outState.putString(KEY_TOP_SCREEN, topTextView.getText().toString());
         outState.putString(KEY_BOT_SCREEN, botTextView.getText().toString());
-        outState.putString(KEY_CURRENT_NUMBER, enteredNumber.toString());
+        outState.putString(KEY_CURRENT_NUMBER, calcore.getCurrentNumber());
         super.onSaveInstanceState(outState);
     }
 
@@ -80,19 +82,19 @@ public class MainActivity extends AppCompatActivity {
         enteredNumber = new StringBuilder(savedInstanceState.getString(KEY_CURRENT_NUMBER));
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode != REQUEST_CODE) {
-            super.onActivityResult(requestCode, resultCode, data);
-            return;
-        }
-        if (resultCode == RESULT_OK) {
-            if (data.getBooleanExtra(darkSet, false)) {
-                themeSetter();
-                recreate();
-            }
-        }
-    }
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        if (requestCode != REQUEST_CODE) {
+//            super.onActivityResult(requestCode, resultCode, data);
+//            return;
+//        }
+//        if (resultCode == RESULT_OK) {
+//            if (data.getBooleanExtra(darkSet, false)) {
+//                themeSetter();
+//                recreate();
+//            }
+//        }
+//    }
 
     private void controlsInit() {
         topTextView = findViewById(R.id.topScreen);
@@ -141,11 +143,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initialSetup() {
-        enteredNumber = new StringBuilder("0");
+        calcore = new Calcore();
         clearScreen();
-        showOnScreen("", enteredNumber.toString());
-        firstNumber = "";
-        mathAction = "";
+        showOnScreen("", calcore.getCurrentNumber());
         resOnScreen = false;
         actionSignEnter = false;
     }
@@ -153,26 +153,24 @@ public class MainActivity extends AppCompatActivity {
     private void themeSetter() {
         boolean isDark = getSharedPreferences(settings,MODE_PRIVATE).getBoolean(darkSet, false);
         if (isDark) {
-            setTheme(R.style.Theme_ArithmometerDark);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
-            setTheme(R.style.Theme_Arithmometer);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         }
     }
 
     private View.OnClickListener activityChangeListener = (View v) -> {
             Intent windowSettings = new Intent(MainActivity.this, SettingsActivity.class);
-            MainActivity.this.startActivityForResult(windowSettings, REQUEST_CODE);
+            MainActivity.this.startActivity(windowSettings);
     };
 
     private View.OnClickListener numbersOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (resOnScreen) enteredNumberClear();
-            resOnScreen = false;
             actionSignEnter = false;
             switch (v.getId()) {
                 case R.id.button_dot:
-                    if (!enteredNumber.toString().contains(".")) enteredNumber.append(buttonDot.getText().toString());
+                    if (!resOnScreen) calcore.addDot();
                     break;
                 case R.id.button_0:
                 case R.id.button_1:
@@ -184,15 +182,15 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button_7:
                 case R.id.button_8:
                 case R.id.button_9:
+                    if (resOnScreen) clearScreen();
                     Button pressedButton = (Button)v;
-                    if (enteredNumber.toString().equals("0"))
-                        enteredNumber.replace(0,1, pressedButton.getText().toString());
-                    else if (enteredNumber.length() < MAX_NUMBER_LEN) enteredNumber.append(pressedButton.getText().toString());
+                    calcore.addDigit(pressedButton.getText().toString(), resOnScreen);
+                    resOnScreen = false;
                     break;
                 default:
                     throw new RuntimeException("Unknown symbol");
             }
-            showOnScreen("", enteredNumber.toString());
+            showOnScreen("", calcore.getCurrentNumber());
         }
     };
 
@@ -204,14 +202,8 @@ public class MainActivity extends AppCompatActivity {
                     initialSetup();
                     break;
                 case R.id.button_back:
-                    if (!actionSignEnter) {
-                        int enteredNumberLength = enteredNumber.length();
-                        if (enteredNumberLength > 1)
-                            enteredNumber.delete(enteredNumberLength - 1, enteredNumberLength);
-                        else
-                            enteredNumberClear();
-                    }
-                    showOnScreen("", enteredNumber.toString());
+                    if (!actionSignEnter) calcore.deleteDigit();
+                    showOnScreen("", calcore.getCurrentNumber());
                     break;
                 case R.id.button_add:
                 case R.id.button_div:
@@ -221,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
                     operationClickedProcessor(pressedButton.getText().toString());
                     break;
                 case R.id.button_equal:
-                    calculationsDone();
+                    if (!resOnScreen) calculationsDone();
                     break;
                 default:
                     throw new RuntimeException("Unknown button");
@@ -233,94 +225,44 @@ public class MainActivity extends AppCompatActivity {
         String topString = "", botString = "";
 
         if (!actionSignEnter) {
+            if (calcore.getPreviousNumber().isEmpty()) clearScreen();
+            topString = calcore.getCurrentNumber() + " " + operation + " ";
             actionSignEnter = true;
-            if (firstNumber.isEmpty()) {
-                firstNumber = enteredNumber.toString();
-                enteredNumberClear();
-                mathAction = operation;
-                topString = firstNumber + " " + mathAction + " ";
-                botString = enteredNumber.toString();
-            }
-            else {
-                try {
-                    firstNumber = getEquationResult();
-                    mathAction = operation;
-                    topString = enteredNumber.toString() + " " + mathAction + " ";
-                    botString = firstNumber;
-                    enteredNumberClear();
-                } catch (ArithmeticException e) {
-                    topString = enteredNumber.toString() + " " + mathAction + " ";
-                    initialSetup();
-                    botString = e.getMessage();
-                }
+            try {
+                botString = calcore.addOperation(operation);
+            } catch (ArithmeticException e) {
+                botString = e.getMessage();
             }
             showOnScreen(topString, botString);
         }
         else {
-            mathAction = operation;
-            changeActionOnScreen(mathAction);
+            calcore.setOperation(operation);
+            String topText = topTextView.getText().toString();
+            clearScreen();
+            showOnScreen(topText.substring(0, topText.length()-2) + operation + " ", calcore.getCurrentNumber());
         }
+        resOnScreen = false;
     }
 
     private void calculationsDone() {
-        String tempResult = "";
-        String eMessage = "";
-        if (firstNumber.isEmpty()) tempResult = enteredNumber.toString();
+        String oldCurrent;
+        String tempResult;
+
+        if (calcore.getPreviousNumber().isEmpty()) showOnScreen("", calcore.getCurrentNumber());
         else {
+            oldCurrent = calcore.getCurrentNumber();
             try {
-                tempResult = getEquationResult();
+                tempResult = calcore.getResult();
             } catch (ArithmeticException e) {
-                tempResult = "";
-                eMessage = e.getMessage();
+                tempResult = e.getMessage();
             }
+            showOnScreen(oldCurrent, tempResult);
         }
-        clearScreen();
-        firstNumber = "";
-        if (!tempResult.isEmpty()) {
-            enteredNumber.replace(0, enteredNumber.length(), tempResult);
-            resOnScreen = true;
-        }
-        else {
-            initialSetup();
-            tempResult = eMessage;
-        }
-        showOnScreen("", tempResult);
-        mathAction = "";
+
+        resOnScreen = true;
         actionSignEnter = false;
     }
 
-    private void enteredNumberClear() {
-        enteredNumber.replace(0, enteredNumber.length(), "0");
-    }
-
-    private String getEquationResult() {
-
-        double a = Double.parseDouble(firstNumber);
-        double b = Double.parseDouble(enteredNumber.toString());
-        double res;
-//        float a = Float.parseFloat(firstNumber);
-//        float b = Float.parseFloat(enteredNumber.toString());
-//        float res;
-        switch (mathAction) {
-            case "+":
-                res = a + b;
-                break;
-            case "-":
-                res = a - b;
-                break;
-            case "x":
-                res = a * b;
-                break;
-            case "÷":
-                if (b != 0) res = a / b;
-                else throw new ArithmeticException("ERR: DIV by ZERO");
-                break;
-            default:
-                throw new RuntimeException("Unknownn action");
-        }
-        if (Double.isInfinite(res)) throw new ArithmeticException("ERR: TOO BIG");
-        return cutZeros(res);
-    }
 
     private String cutZeros(double res) {
 //        DecimalFormat decimalFormat = new DecimalFormat("#.#######");
@@ -341,12 +283,6 @@ public class MainActivity extends AppCompatActivity {
         return bd.toString();
     }
 
-    private void changeActionOnScreen(String ch) {
-        String topText = topTextView.getText().toString();
-        clearScreen();
-        showOnScreen(topText.substring(0, topText.length()-2) + ch + " ", enteredNumber.toString());
-    }
-
     private void showOnScreen(String topScreenData, String botScreenData) {
         topTextView.setText(topTextView.getText().toString() + topScreenData);
         botTextView.setText(botScreenData);
@@ -356,4 +292,6 @@ public class MainActivity extends AppCompatActivity {
         topTextView.setText("");
         botTextView.setText("");
     }
+
 }
+

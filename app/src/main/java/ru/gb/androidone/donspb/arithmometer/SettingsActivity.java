@@ -1,6 +1,7 @@
 package ru.gb.androidone.donspb.arithmometer;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,34 +16,32 @@ public class SettingsActivity extends AppCompatActivity {
     private static final String settings = "settings.xml";
     private static final String darkSet = "Dark";
 
-    private static boolean themeChanged = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         boolean isDark = getSharedPreferences(settings,MODE_PRIVATE).getBoolean(darkSet, false);
-        if (isDark) {
-            setTheme(R.style.Theme_ArithmometerDark);
-        } else {
-            setTheme(R.style.Theme_Arithmometer);
-        }
+        themeSetter(isDark);
         setContentView(R.layout.activity_settings);
         Button btnBack = findViewById(R.id.button_back);
         ToggleButton btnTgDark = findViewById(R.id.button_dark_tgl);
         btnTgDark.setChecked(isDark);
 
         btnBack.setOnClickListener((View v) -> {
-            Intent intentRes = new Intent();
-            intentRes.putExtra(darkSet, themeChanged);
-            setResult(RESULT_OK, intentRes);
             finish();
         });
 
         btnTgDark.setOnCheckedChangeListener((CompoundButton button, boolean isChecked) -> {
+            themeSetter(isChecked);
             SharedPreferences sharedPreferences = getSharedPreferences(settings, MODE_PRIVATE);
             sharedPreferences.edit().putBoolean(darkSet, isChecked).apply();
-            recreate();
-            themeChanged = true;
         });
+    }
+
+    private void themeSetter(boolean isDark) {
+        if (isDark) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }

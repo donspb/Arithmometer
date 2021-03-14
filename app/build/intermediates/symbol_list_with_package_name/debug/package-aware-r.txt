@@ -1324,6 +1324,8 @@ dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
 dimen main_settings_button_height
+dimen main_settings_button_padding
+dimen main_settings_button_padding_tb
 dimen main_settings_button_text
 dimen main_settings_button_width
 dimen material_clock_display_padding
@@ -1554,10 +1556,11 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen screen_bot_height
-dimen screen_bot_margin
 dimen screen_bot_width
 dimen screen_lr_margin
 dimen screen_main_margin
+dimen screen_margin
+dimen screen_margin_l
 dimen screen_tb_margin
 dimen screen_top_height
 dimen screen_top_width
@@ -2242,7 +2245,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout keyboard_layout
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2291,7 +2293,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout screen_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2949,7 +2950,6 @@ style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
 style Theme_Arithmometer
-style Theme_ArithmometerDark
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -3152,7 +3152,6 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style button_m_style
-style button_theme
 style screen_theme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity

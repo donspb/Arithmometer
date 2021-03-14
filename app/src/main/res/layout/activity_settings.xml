@@ -52,6 +52,7 @@
                     android:layout_marginLeft="@dimen/button_margin"
                     android:layout_gravity="bottom |right"
                     android:text="@string/back_button_name"
+                    android:textAlignment="center"
                     android:id="@+id/button_back"/>
 
         </FrameLayout>
