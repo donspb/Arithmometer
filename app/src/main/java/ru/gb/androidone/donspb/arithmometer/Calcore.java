@@ -6,10 +6,24 @@ public class Calcore {
     private static final String DELIMITER = ".";
     private static final int MAX_NUMBER_LEN = 7;
 
-    private String mPreviousNumber = "";
-    private StringBuilder mCurrentNumber = new StringBuilder(NUMBER_INIT_VALUE);
-    private String mOperation = "";
-    private boolean mIsFloat = false;
+    private String mPreviousNumber;
+    private StringBuilder mCurrentNumber;
+    private String mOperation;
+    private boolean mIsFloat;
+
+    public Calcore() {
+        mPreviousNumber = "";
+        mCurrentNumber = new StringBuilder(NUMBER_INIT_VALUE);
+        mOperation = "";
+        mIsFloat = false;
+    }
+
+    public Calcore(String previous, String current, String operation) {
+        mPreviousNumber = previous;
+        mCurrentNumber = new StringBuilder(current);
+        mOperation = operation;
+        if (current.contains(DELIMITER)) mIsFloat = false;
+    }
 
     private boolean checkCurrentEmpty() {
         return mCurrentNumber.toString().equals(NUMBER_INIT_VALUE);

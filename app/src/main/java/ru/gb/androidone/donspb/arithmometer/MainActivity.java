@@ -1,7 +1,6 @@
 package ru.gb.androidone.donspb.arithmometer;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
@@ -11,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String KEY_TOP_SCREEN = "TOP_SCREEN";
     private static final String KEY_BOT_SCREEN = "BOT_SCREEN";
     private static final String KEY_CURRENT_NUMBER = "CURRENT";
-
-//    private static final int REQUEST_CODE = 99;
 
     private static final String settings = "settings.xml";
     private static final String darkSet = "Dark";
@@ -41,10 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonEqauls;
     private Button buttonDot;
     private Button buttonSettings;
-    private StringBuilder enteredNumber;
 
-    private String firstNumber;
-    private String mathAction;
     private boolean actionSignEnter = false;
     private boolean resOnScreen = false;
 
@@ -74,27 +66,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        firstNumber = savedInstanceState.getString(KEY_FIRST_NUMBER);
-        mathAction = savedInstanceState.getString(KEY_OPERATION);
+        calcore = new Calcore(savedInstanceState.getString(KEY_FIRST_NUMBER),
+                savedInstanceState.getString(KEY_CURRENT_NUMBER),
+                savedInstanceState.getString(KEY_OPERATION));
         actionSignEnter = savedInstanceState.getBoolean(KEY_OP_ENTER);
         resOnScreen = savedInstanceState.getBoolean(KEY_RES_SHOWING);
         showOnScreen(savedInstanceState.getString(KEY_TOP_SCREEN),savedInstanceState.getString(KEY_BOT_SCREEN));
-        enteredNumber = new StringBuilder(savedInstanceState.getString(KEY_CURRENT_NUMBER));
     }
-
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        if (requestCode != REQUEST_CODE) {
-//            super.onActivityResult(requestCode, resultCode, data);
-//            return;
-//        }
-//        if (resultCode == RESULT_OK) {
-//            if (data.getBooleanExtra(darkSet, false)) {
-//                themeSetter();
-//                recreate();
-//            }
-//        }
-//    }
 
     private void controlsInit() {
         topTextView = findViewById(R.id.topScreen);
@@ -261,26 +239,6 @@ public class MainActivity extends AppCompatActivity {
 
         resOnScreen = true;
         actionSignEnter = false;
-    }
-
-
-    private String cutZeros(double res) {
-//        DecimalFormat decimalFormat = new DecimalFormat("#.#######");
-//        return decimalFormat.format(res);
-
-//        int zeroCount = 0;
-//        String string = String.format("%10.7e", res);
-//        for (int i = string.length() - 1; i > 0; i--)
-//            if (string.charAt(i) == '0') zeroCount++;
-//            else {
-//                if (string.charAt(i) == '.') zeroCount++;
-//                break;
-//            }
-//        return string.substring(0,string.length() - zeroCount);
-
-        BigDecimal bd = new BigDecimal(Double.toString(res));
-        bd.setScale(7, RoundingMode.HALF_DOWN);
-        return bd.toString();
     }
 
     private void showOnScreen(String topScreenData, String botScreenData) {

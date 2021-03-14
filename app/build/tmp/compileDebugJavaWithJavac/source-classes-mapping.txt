@@ -1,10 +1,10 @@
 ru/gb/androidone/donspb/arithmometer/SettingsActivity.java
  ru.gb.androidone.donspb.arithmometer.SettingsActivity
+ru/gb/androidone/donspb/arithmometer/BuildConfig.java
+ ru.gb.androidone.donspb.arithmometer.BuildConfig
 ru/gb/androidone/donspb/arithmometer/MainActivity.java
  ru.gb.androidone.donspb.arithmometer.MainActivity
  ru.gb.androidone.donspb.arithmometer.MainActivity$1
  ru.gb.androidone.donspb.arithmometer.MainActivity$2
-ru/gb/androidone/donspb/arithmometer/BuildConfig.java
- ru.gb.androidone.donspb.arithmometer.BuildConfig
 ru/gb/androidone/donspb/arithmometer/Calcore.java
  ru.gb.androidone.donspb.arithmometer.Calcore
