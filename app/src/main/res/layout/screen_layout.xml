@@ -20,9 +20,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/screen_top_height"
-        android:layout_marginTop="@dimen/screen_main_margin"
-        android:layout_marginLeft="@dimen/screen_main_margin"
-        android:layout_marginRight="@dimen/screen_main_margin"
+        android:layout_marginTop="@dimen/screen_lr_margin"
+        android:layout_marginLeft="@dimen/screen_lr_margin"
+        android:layout_marginRight="@dimen/screen_lr_margin"
         android:id="@+id/topScreen"
         android:textColor="@color/screen_text" />
 
@@ -30,9 +30,11 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/screen_bot_height"
         android:layout_marginTop="@dimen/screen_bot_margin"
-        android:layout_marginLeft="@dimen/screen_main_margin"
-        android:layout_marginRight="@dimen/screen_main_margin"
+        android:layout_marginLeft="@dimen/screen_lr_margin"
+        android:layout_marginRight="@dimen/screen_lr_margin"
         android:id="@+id/botScreen"
-        android:textColor="@color/screen_text" />
+        android:textColor="@color/screen_text"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/text_bot_size_medium"/>
 
 </FrameLayout>

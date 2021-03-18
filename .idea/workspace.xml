@@ -14,6 +14,9 @@
       </config>
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,61 +28,24 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:practice3" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36ced2cf-d17b-4a5d-915f-81dd21bde3c9" name="Default Changelist" comment="Calc">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/ru/gb/androidone/donspb/arithmometer/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/gb/androidone/donspb/arithmometer/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/ru/gb/androidone/donspb/arithmometer/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    <list default="true" id="36ced2cf-d17b-4a5d-915f-81dd21bde3c9" name="Default Changelist" comment="Practice02">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Arithmometer.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Arithmometer.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/gb/androidone/donspb/arithmometer/Equation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/gb/androidone/donspb/arithmometer/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/gb/androidone/donspb/arithmometer/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/screen_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/screen_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" afterDir="false" />
     </list>
-    <list id="95e372a0-13fd-47bf-af86-3efd273a035d" name="Practice02" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calc_button.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/calc_screen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/headcrab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/keyboard_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/screen_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-    </list>
+    <list id="95e372a0-13fd-47bf-af86-3efd273a035d" name="Practice02" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,16 +57,34 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="practice03" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oo9eFr9P6JNaw6ns4dJ8VHNjfA" />
@@ -112,7 +96,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Arithmometer2" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -240,7 +229,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614184693422</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Calc">
+      <created>1614185029381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614185029381</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Practice02">
+      <created>1614186072949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614186072949</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1614604783498</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614604783499</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +264,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="practice3" />
                       </list>
                     </value>
                   </entry>
@@ -270,6 +280,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/practice02" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="master" />
@@ -290,9 +305,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Calc" />
     <MESSAGE value="Practice02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Practice02" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="477" y="266" key="#PSD" timestamp="1614545227124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="477" y="266" key="#PSD/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614545227124" />
+    <state x="445" y="217" key="#com.intellij.ide.util.MemberChooser" timestamp="1614599950939">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="445" y="217" key="#com.intellij.ide.util.MemberChooser/0.0.1280.1024@0.0.1280.1024" timestamp="1614599950939" />
     <state x="540" y="275" key="AndroidCreateResourceFileDialog" timestamp="1614099809812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,45 +325,59 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="804" y="310" key="AndroidCreateXmlResourceDialog/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614025956382" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1614096865410">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="92" y="92" width="1096" height="840" key="DiffContextDialog" timestamp="1614860711175">
+      <screen x="0" y="0" width="1280" height="1024" />
     </state>
+    <state x="92" y="92" width="1096" height="840" key="DiffContextDialog/0.0.1280.1024@0.0.1280.1024" timestamp="1614860711175" />
+    <state x="493" y="257" key="FileChooserDialogImpl" timestamp="1614677057026">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="493" y="257" key="FileChooserDialogImpl/0.0.1280.1024@0.0.1280.1024" timestamp="1614677057026" />
     <state x="740" y="261" key="FileChooserDialogImpl/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614096865410" />
     <state x="828" y="418" key="Github.ShareDialog" timestamp="1614184770541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="418" key="Github.ShareDialog/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614184770541" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1614095828246">
+    <state width="938" height="281" key="GridCell.Tab.0.bottom" timestamp="1614548680603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614095828246" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1614095828246">
+    <state width="938" height="281" key="GridCell.Tab.0.bottom/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614548680603" />
+    <state width="938" height="281" key="GridCell.Tab.0.center" timestamp="1614548680603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614095828246" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1614095828246">
+    <state width="938" height="281" key="GridCell.Tab.0.center/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614548680603" />
+    <state width="938" height="281" key="GridCell.Tab.0.left" timestamp="1614548680603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614095828246" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1614095828246">
+    <state width="938" height="281" key="GridCell.Tab.0.left/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614548680603" />
+    <state width="938" height="281" key="GridCell.Tab.0.right" timestamp="1614548680603">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614095828246" />
+    <state width="938" height="281" key="GridCell.Tab.0.right/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614548680603" />
     <state x="841" y="240" key="RollbackChangesDialog" timestamp="1614184148526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="841" y="240" key="RollbackChangesDialog/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614184148526" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1614185720426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614185720426" />
     <state x="807" y="434" key="VCS.ChangelistChooser" timestamp="1614184737805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="434" key="VCS.ChangelistChooser/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614184737805" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614184718900">
+    <state x="368" y="249" key="Vcs.Push.Dialog.v2" timestamp="1614860802631">
+      <screen x="0" y="0" width="1280" height="1024" />
+    </state>
+    <state x="368" y="249" key="Vcs.Push.Dialog.v2/0.0.1280.1024@0.0.1280.1024" timestamp="1614860802631" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614548802297" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614185937914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614184718900" />
-    <state x="751" y="206" key="svn.repositoryBrowser" timestamp="1614181381554">
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614185937914" />
+    <state x="751" y="206" key="svn.repositoryBrowser" timestamp="1614185743552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="751" y="206" key="svn.repositoryBrowser/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614181381554" />
+    <state x="751" y="206" key="svn.repositoryBrowser/1920.50.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1614185743552" />
   </component>
 </project>

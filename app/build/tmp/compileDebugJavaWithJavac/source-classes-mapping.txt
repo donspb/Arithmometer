@@ -1,4 +1,6 @@
 ru/gb/androidone/donspb/arithmometer/MainActivity.java
  ru.gb.androidone.donspb.arithmometer.MainActivity
+ ru.gb.androidone.donspb.arithmometer.MainActivity$1
+ ru.gb.androidone.donspb.arithmometer.MainActivity$2
 ru/gb/androidone/donspb/arithmometer/BuildConfig.java
  ru.gb.androidone.donspb.arithmometer.BuildConfig
