@@ -18,4 +18,9 @@
     <string name="equal">=</string>
     <string name="zero">0</string>
     <string name="dot">.</string>
+
+    <!-- Settings page -->
+    <string name="set_title">Settings</string>
+    <string name="set_setting_name">Dark Theme</string>
+    <string name="back_button_name">Back</string>
 </resources>

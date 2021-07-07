@@ -17,14 +17,14 @@
 
 
     <!-- Screen parameters portrait -->
-    <dimen name="screen_total_height">300sp</dimen>
-    <dimen name="screen_top_height">70sp</dimen>
+    <dimen name="screen_total_height">150sp</dimen>
+    <dimen name="screen_top_height">40sp</dimen>
     <dimen name="screen_main_margin">5sp</dimen>
-    <dimen name="screen_lr_margin">5sp</dimen>
     <dimen name="screen_margin_l">100sp</dimen>
-    <dimen name="screen_bot_height">130sp</dimen>
-    <dimen name="screen_margin">40sp</dimen>
-    <dimen name="sreen_full_height">200sp</dimen>
+    <dimen name="screen_lr_margin">5sp</dimen>
+    <dimen name="screen_bot_height">80sp</dimen>
+    <dimen name="screen_margin">15sp</dimen>
+    <dimen name="sreen_full_height">120sp</dimen>
     <dimen name="text_bot_size_small">30sp</dimen>
     <dimen name="text_bot_size_medium">50sp</dimen>
     <dimen name="text_bot_size_large">80sp</dimen>
