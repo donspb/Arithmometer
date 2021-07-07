@@ -4,7 +4,8 @@
     <!-- Buttons parameters -->
     <dimen name="button_radius">100sp</dimen>
     <dimen name="button_contour">2sp</dimen>
-    <dimen name="button_margin">10sp</dimen>
+    <dimen name="button_margin">4sp</dimen>
+    <dimen name="button_textsize">25sp</dimen>
 
     <!-- Screen parameters portrait -->
     <dimen name="screen_total_height">300sp</dimen>
