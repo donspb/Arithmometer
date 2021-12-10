@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <FrameLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_total_height"
+        android:id="@+id/screenzone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sreen_full_height"
+            style="@style/screen_theme"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginRight="@dimen/screen_margin"
+            android:layout_marginLeft="@dimen/screen_margin_l"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/screen_top_height"
+                android:layout_marginLeft="@dimen/screen_lr_margin"
+                android:layout_marginRight="@dimen/screen_lr_margin"
+                android:id="@+id/topScreen"
+                android:textColor="@color/screen_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/screen_bot_height"
+                android:layout_marginLeft="@dimen/screen_lr_margin"
+                android:layout_marginRight="@dimen/screen_lr_margin"
+                android:id="@+id/botScreen"
+                android:textColor="@color/screen_text"
+                android:textAlignment="viewEnd"
+                android:textSize="@dimen/text_bot_size_medium"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/screen_total_height"
+        android:columnCount="5"
+        app:layout_constraintTop_toBottomOf="@id/screenzone">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ce"
+            style="@style/button_m_style"
+            android:text="@string/c_ce" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_back"
+            android:text="@string/back"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_div"
+            android:text="@string/div"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_mult"
+            android:text="@string/mult"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add"
+            android:text="@string/add"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_0"
+            android:layout_rowSpan="2"
+            android:text="@string/zero"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_7"
+            android:text="@string/seven"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_8"
+            android:text="@string/eight"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_9"
+            android:text="@string/nine"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_minus"
+            android:text="@string/minus"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_4"
+            android:text="@string/four"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_5"
+            android:text="@string/five"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_6"
+            android:text="@string/six"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_equal"
+            android:layout_rowSpan="2"
+            android:text="@string/equal"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_dot"
+            android:text="@string/dot"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_1"
+            android:text="@string/one"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_2"
+            android:text="@string/two"
+            style="@style/button_m_style" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_3"
+            android:text="@string/three"
+            style="@style/button_m_style" />
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
