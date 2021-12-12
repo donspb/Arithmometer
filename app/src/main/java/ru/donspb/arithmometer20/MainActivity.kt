@@ -103,8 +103,8 @@ class MainActivity : AppCompatActivity(), IMainView {
 
 
     override fun showOnScreen(topScreenData: String?, botScreenData: String?) {
-        val oldTopText: String = binding?.topScreen?.text.toString()
-        binding?.topScreen?.text = topScreenData + oldTopText
+        val newTopText: String = binding?.topScreen?.text.toString() + topScreenData
+        binding?.topScreen?.text = newTopText
         binding?.botScreen?.text = botScreenData
     }
 
