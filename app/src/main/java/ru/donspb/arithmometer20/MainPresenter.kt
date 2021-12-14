@@ -93,7 +93,7 @@ class MainPresenter : IMainPresenter {
             val topSubstring = topString?.length?.minus(2)?.let { topString?.substring(0, it) }
             calCore.setOperation(operation)
             currentView?.clearScreen()
-            setScreenStrings("$topSubstring $operationSymbol ", calCore.getCurrentNumber())
+            setScreenStrings("$topSubstring$operationSymbol ", calCore.getCurrentNumber())
         }
         resultShowing = false
     }
