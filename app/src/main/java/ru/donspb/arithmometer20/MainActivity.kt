@@ -2,7 +2,6 @@ package ru.donspb.arithmometer20
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatDelegate
 import ru.donspb.arithmometer20.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), IMainView {
